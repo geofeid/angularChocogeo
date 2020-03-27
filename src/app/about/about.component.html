@@ -1,3 +1,25 @@
-<p>
-  about works!
-</p>
+<div class="container">
+  <div class="row ">
+    <div class="col-12">
+      <h3>About us</h3>
+      <hr>
+    </div>
+ </div>
+  <div class="row ">
+    <h4 class="col-12">Corporate Leadership</h4>
+    <div class="media" *ngFor="let Leader of leaders"  >
+      <img class=" img-thumbnail align-self-end"
+        src={{Leader.image}} alt={{Leader.name}}>
+      <div class="media-body">
+        <h5 class="mt-4">{{Leader.name | uppercase}}
+          <span class="badge badge-danger">{{Leader.designation}}</span>
+          <span class="badge badge-pill badge-success">{{Leader.abbr}}</span>
+        </h5>
+        <p class="col d-none d-sm-block">
+          {{Leader.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
