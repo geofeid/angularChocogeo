@@ -113,7 +113,7 @@ export const DISHES: Dish[] = [
     id: 3,
     name: '55%, 75% and 85% Chocolates with almonds',
     image: '/assets/images/almonds.jpg',
-    category: 'mixed',
+    category: 'darks',
     label: '',
     price: '2.99',
     featured: false,
@@ -142,6 +142,42 @@ export const DISHES: Dish[] = [
         comment: 'Wish I had more!',
         rating: 5,
         date: '2018-03-03T18:59:14.590Z'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: '100% DARK CHOCOLATE',
+    image: '/assets/images/totalDark100.png',
+    category: 'mixed',
+    label: 'New',
+    price: '6.99',
+    featured: false,
+    description: 'Tottaly dark chocolate with very strong flavor, made with a range of cocoa beans.',
+    comments: [
+      {
+        author: 'John Smith',
+        comment: 'A different experience',
+        rating: 3,
+        date: '2018-06-23T17:10:13.231Z'
+      },
+      {
+        author: 'Anna Dark',
+        comment: 'Amazing! just try it!',
+        rating: 5,
+        date: '2018-06-23T18:28:06.516Z'
+      },
+      {
+        author: 'Alice Coper',
+        comment: 'I would say that you should try it even if you prefer milk chocolate. The taste is unique.',
+        rating: 5,
+        date: '2018-06-23T18:29:56.380Z'
+      },
+      {
+        author: 'Natassa ReZum',
+        comment: 'Too bitter for my taste',
+        rating: 1,
+        date: '2018-06-23T18:59:14.590Z'
       }
     ]
   }
