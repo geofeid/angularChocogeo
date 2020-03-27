@@ -45,7 +45,7 @@ export class DishdetailComponent implements OnInit {
 
 
   dish = DISH;
-  now = DISH;
+  first = DISH.comments[0];
   constructor() { }
 
   ngOnInit() {
