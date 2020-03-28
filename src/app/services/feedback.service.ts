@@ -16,4 +16,9 @@ export class FeedbackService {
    
 
 }
+
+addFeedbacks(fb: Feedback): Observable<Feedback[]> {
+  return this.http.post<Feedback[]>(baseURL + 'feedback', fb);
+ }
+
 }
