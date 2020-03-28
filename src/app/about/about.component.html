@@ -9,7 +9,7 @@
     <h4 class="col-12">Corporate Leadership</h4>
     <div class="media" *ngFor="let Leader of leaders"  >
       <img class=" img-thumbnail align-self-end"
-        src={{Leader.image}} alt={{Leader.name}}>
+      src="{{BaseURL + Leader.image}}" alt={{Leader.name}}>
       <div class="media-body">
         <h5 class="mt-4">{{Leader.name | uppercase}}
           <span class="badge badge-danger">{{Leader.designation}}</span>

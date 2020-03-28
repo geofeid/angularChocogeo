@@ -1,17 +1,26 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/delay';
+import 'rxjs/add/observable/of';
+import { HttpClient } from '@angular/common/http';
+import { baseURL } from '../shared/baseurl';
 import { Leader } from '../shared/leader';
-import { LEADERS } from '../shared/leaders';
-@Injectable()
+
+
+
+
+
+
+  @Injectable()
 export class LeaderService {
-
-  constructor() { }
-
-  getLeaders(): Leader[] {
-    return LEADERS;
-  }
-
-  getDish(id: number): Leader {
-    return LEADERS.filter((leader) => (leader.id === id))[0];
-  }
-
+ constructor(private http: HttpClient) { }
+ getLeaders(): Observable<Leader[]> {
+ return this.http.get<Leader[]>(baseURL + 'leaders');
+ }
+ getDish(id: number): Observable<Leader> {
+ return this.http.get<Leader>(baseURL + 'leaders/' + id);
+ }
 }
+   
+
+
