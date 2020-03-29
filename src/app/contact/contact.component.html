@@ -7,7 +7,7 @@
           <ul class="list-group list-group-flush"*ngFor="let feedback of feedbacks">
             <li class="list-group-item"><b>{{feedback.firstname}}</b> <br>
               {{feedback.lastname}}  <br>
-              <span>-- {{feedback.message}}</span>
+              <span>-- {{feedback.message}} <br> {{feedback.date}}</span>
             </li>
           </ul>
         </div>
@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-12 offset-sm-1">
       <h3>Send us your message</h3>
-      <p>{{ feedbackForm.value | json }}</p>
+      <p>{{ feedbackForm.value| json }}</p>
    </div>
     <div class="col-12 col-md-9 offset-sm-1">
         <!-- Form goes here -->
